@@ -1,0 +1,145 @@
+.temas{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #060A24;
+    margin: 48px 16px auto 16px;
+}
+.temastitle{
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 36px;
+    font-weight: 100;
+}
+.iconstemas{
+    margin-top: 37px;
+}
+.imagesalgunostemas{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 49px;
+}
+.imagesalgunostemas img{
+    width: 104px;
+    margin-bottom: 13px;
+}
+.texttemas{
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+    text-align: center;
+}
+
+.novedades{
+    border: 0.5px solid #FFFFFF;
+    width: 100%;
+    height: 341px;
+    background-image: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
+    clip-path: polygon(0% 10%, 100% 0%, 100% 100%, 0% 100%);
+    text-align: center;
+}
+.novedadestitle{
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 36px;
+    color: #FFFFFF;
+    font-weight: 100;
+    margin-top: 64px;
+    margin-left: 5%;
+}
+.buttonnovedades {
+    font-family: 'IBM Plex Mono', monospace;
+    font-weight: 500;
+    font-size: 16px;
+    color: #060A24;
+    background-color: #00F3BB;
+    border: 0;
+    text-decoration: none;
+    width: 288px;
+    height: 48px;
+    margin-top: 36px;
+}
+.buttonnovedades:hover{
+    background-image: linear-gradient(225deg, #0000FE 0%, #00F0B8 100%);
+    color: white;
+    transition: 0.5s;
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 24px;
+}
+.footertitle{
+    font-family: 'IBM Plex Mono', monospace;
+    color: #060A24;
+    font-size: 14px;
+    line-height: 22px;
+}
+.social{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 38px;  
+    margin-top: 16px;  
+    margin-bottom: 31px;
+}
+.social a{
+    text-decoration: none;
+    color: #060A24;
+    
+}
+.social a:hover{
+    color: #00F3BB;
+    transition: 0.5s;
+}
+
+@media (min-width: 768px){
+    .temas{
+        margin-top: 64px;
+        margin-left: 200px;
+        align-items: flex-start;
+    }
+    .temastitle{
+        font-size: 48px;
+    }
+    .iconstemas{
+        margin-top: 69px;
+        display: flex;
+        flex-direction: row;
+    }  
+    .imagesalgunostemas{
+        width: 260px;
+    }
+    .imagesalgunostemas img{
+        margin-bottom: 29px;
+    }
+    .texttemas{
+        width: 220px;
+    }
+    .novedades{
+        height: 518px;
+        clip-path: polygon(0% 25%, 100% 0%, 100% 100%, 0% 100%);
+    }
+    .novedadestitle{
+        font-size: 48px;
+        margin-top: 213px;
+    }
+    .buttonnovedades{
+        font-size: 18px;
+        width: 345px;
+        height: 56px;
+    }
+    footer{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-content: center;
+        margin: 36px 100px 31px 100px;
+    }
+    .footertitle{
+        font-size: 16px;
+    }
+    .social{
+        margin: 0;
+    }
+}

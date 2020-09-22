@@ -1,0 +1,75 @@
+
+main{
+    margin-top: 73px;
+    margin-left: 5%;
+    width: 288px;
+}
+h1{
+    color: #060A24;
+    font-weight: 200;
+    font-size: 36px;
+    font-family: 'IBM Plex Sans';
+    width: 230px;
+}
+.textmobile{
+    color: #060A24;
+    font-family: 'IBM Plex Mono';
+    font-size: 14px;
+    width: 288px;
+    margin-top: 16px;
+    line-height: 22px;
+}
+.textdesktop{
+    color: #060A24;
+    font-family: 'IBM Plex Mono';
+    font-size: 16px;
+    width: 618px;
+    line-height: 24px;
+}
+.button{
+    font-family: 'IBM Plex Mono', monospace;
+    font-weight: 500;
+    font-size: 16px;
+    color: #060A24;
+    background-color: #00F3BB;
+    border: 0;
+    text-decoration: none;
+    width: 288px;
+    height: 48px;
+    margin-top: 36px;
+}
+.button:hover{
+    background-image: linear-gradient(225deg, #0000FE 0%, #00F0B8 100%);
+    color: white;
+    transition: 0.5s;
+}
+
+@media (min-width: 768px) {
+    main{
+        margin-top: 200px;
+        margin-left: 200px;
+        width: 100%;
+    }
+    .textmobile{
+        display: none !important;
+    }
+    h1{
+        font-size: 64px; 
+        width: 100%;
+    }
+    h1 span{
+        color: #0000EC;
+    }
+    .button{
+        width: 226px;
+        height: 56px;
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 767px){
+	.textdesktop {
+            display: none;
+            
+	}
+}

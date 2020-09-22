@@ -1,0 +1,55 @@
+.venimos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 1;
+    transform: translate(0px, -150px);
+}
+.imagephone{
+    width: 320px;
+}
+.textvenimos{
+    margin: 27px 16px 8px 16px;
+    color: #060A24;
+}
+.venimostitle{
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 36px;  
+    line-height: 42px;
+    width: 288px;
+    font-weight: 100;
+}
+.pvenimos{
+    font-family: 'IBM Plex Mono', monospace;  
+    font-size: 14px;
+    line-height: 22px;
+    margin-top: 8px;
+}
+
+@media (min-width: 768px) {
+    .venimos{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        transform: translate(0px, -230px);
+    }
+    .imagephone{
+        width: 457.6px;
+        margin-left: 50px;
+    }
+    .textvenimos{
+        margin-left: 62.4px;
+    }
+    .venimostitle{
+        font-family: 'IBM Plex Sans', sans-serif;
+        font-size: 48px;
+        width: 399px;
+    }
+    .pvenimos{
+        font-family: 'IBM Plex Mono', monospace;  
+        font-size: 16px;
+        line-height: 24px;
+        width: 464px;
+        margin-top: 24px;
+    }
+}

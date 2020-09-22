@@ -1,0 +1,138 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}   
+body{
+    background-color: #FFFFFF;
+}
+
+header {
+    width: 320px;
+    position: fixed;
+    height: 44px;
+    top: 0;
+    padding-top: 10px;
+    padding-right: 16px;
+    background-color: #FFFFFF;
+    z-index: 4;
+}
+header img{
+    float: left;
+    width: 24px;
+    margin-left: 16px;
+}
+header nav{
+    float: right;
+}
+.menu{
+    padding-top: 3px;
+}
+.menu ul{
+    width: 100%;
+    position: absolute;
+    top: 44px;
+    right: 0;
+    height: 0px;
+    overflow: hidden;
+    list-style: none;
+    background: #0000EC;
+}
+.menu ul li{
+    position: relative;
+}
+
+.menu ul li a{
+    position: relative;
+    text-decoration: none;
+    color: #FFFFFF;
+    padding: 16px;
+    display: block;
+    font-family: 'IBM Plex Mono';
+    font-size: 16px;
+}
+
+.menu input[type="checkbox"]:checked ~ ul {
+    height: 224px;
+    width: 320px;
+} 
+.menu input{
+    display: block;
+    opacity: 0;
+    z-index: 3;
+    position: absolute;
+    margin-right: 19px;
+}
+
+.menu span{
+    display: block;
+    width: 18px;
+    height: 2px;
+    margin-bottom: 3px;
+    position: relative;
+    background: #060A24;
+    z-index: 2;
+    transform-origin: 6px -1px;
+}
+.menu span:first-child {
+    transform-origin: 0% 0%;
+}
+.menu span:nth-last-child(2) {
+    transform-origin: 0% 100%;
+}
+.menu input:checked ~ span {
+    opacity: 1;
+    transform: rotate(45deg) translate(2px, 1px);
+}
+.menu input:checked ~ span:nth-last-child(3) {
+    opacity: 0;
+    transform: rotate(0deg) scale(0.2, 0.2);
+}
+.menu input:checked ~ span:nth-last-child(2) {
+    transform: rotate(-45deg) translate(1px, 0px);
+}
+
+@media screen and (min-width: 768px){
+    header {
+        width: 100%;
+        height: 80px;
+        padding-top: 22px;
+    }
+    header img{
+        width: 36px;
+        margin-left: 100px;
+        }
+    .menu ul{
+        position: relative;
+        top: 0;
+        right: 100px;
+        overflow: hidden;
+        background: #FFFFFF;
+        height: unset;
+    }
+    .menu ul li{
+        padding: 5px 20px;
+        display: inline-block;
+    }
+    .menu ul li a{
+        padding: unset;
+        line-height: unset;
+        color: #060A24;
+    }
+    .menu ul li a:hover{
+        color: #00F3BB;
+        text-decoration: line-through;
+        transition: 0.5s;
+    }
+    .menu ul li a:active{
+        color: #060A24;
+        text-decoration: line-through;
+        opacity: 56%;
+    }
+    .menu input{
+        display: none;
+    }
+    .menu span{
+        display: none;
+    }
+}

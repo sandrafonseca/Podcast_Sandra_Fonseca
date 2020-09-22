@@ -32,6 +32,7 @@
         flex-direction: row;
         justify-content: center;
         transform: translate(0px, -230px);
+        width: 100%;
     }
     .imagephone{
         width: 457.6px;

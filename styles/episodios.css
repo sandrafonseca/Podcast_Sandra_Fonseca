@@ -1,6 +1,6 @@
 .episodios{
     border: 0.5px solid #FFFFFF;
-    width: 320px;
+    width: 100%;
     height: 1303.5px;
     margin-top: 24px;
     background-image: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
@@ -26,7 +26,6 @@
 
 @media (min-width: 768px) {
     .episodios{
-        width: 100%;
         height: 1142.6px;
         clip-path: polygon(0% 15%, 100% 0%, 100% 80%, 0% 100%);
     }

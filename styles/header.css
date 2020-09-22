@@ -8,7 +8,7 @@ body{
 }
 
 header {
-    width: 320px;
+    width: 100%;
     position: fixed;
     height: 44px;
     top: 0;
